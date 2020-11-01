@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | IP Address Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="root.css"> 
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script> 
+</head>
+<body>
+
+    <section class="top-section">
+        <div class="top-section-content">
+            <h1>IP Address Tracker</h1>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search for any IP address or domain">
+                <button id="search-ip"><img src="./images/icon-arrow.svg" alt="arrow icon"> </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="address-details-section">
+        <div class="ip-address-container address-item">
+            <small>IP address</small>
+            <p id="ip-address">192.212.174.101</p>
+        </div>
+        <div class="location-container address-item">
+            <small>Location</small>
+            <p id="location-details">Brooklyn, NY 10001</p>
+        </div>
+        <div class="timezone-container address-item">
+            <small>Timezone</small>
+            <p id="timezone">UTC -5:00</p>
+        </div>
+        <div class="isp-container address-item">
+            <small>ISP</small>
+            <p id="isp">Space X Starlink</p>
+        </div>  
+    </section>
+
+    <section class="map-section">
+        <div class="map-container" id="mapItem">
+
+        </div>
+    </section>
+  
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://twitter.com/Izaak_Fresh" target="_blank">Isaac</a>.
+    </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
