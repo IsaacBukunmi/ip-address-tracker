@@ -107,7 +107,7 @@ body{
 }
 
 .map-section .map-container{
-    height:500px;
+    height:90vh;
     size: cover;
 }
 
@@ -124,6 +124,13 @@ body{
 .attribution a{ 
     color: hsl(227, 67%, 61%)
 }
+
+@media(max-width:930px){
+    .leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar {
+        margin-top:100px !important;
+    }
+}
+
 
 @media(max-width:990px){
     .address-details-section{
@@ -148,21 +155,25 @@ body{
     .address-details-section .address-item:last-of-type{
         padding-bottom: 0px;
     }
-}
-@media(max-width:930px){
+
     .leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar {
-        margin-top:100px !important;
+        margin-top:260px !important;
+    }
+
+    .map-section .map-container{
+        height:100vh;
+        size: cover;
     }
 }
 
-@media(max-width:800px){
-    .leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar {
-        margin-top:250px !important;
-    }
-}
 
 @media(max-width:600px){
     .search-container input{
         width:80vw;
+    }
+
+    .address-details-section{
+        flex-direction: column;
+        top:25%
     }
 }

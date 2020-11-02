@@ -10,8 +10,8 @@ let addressMap = document.getElementById("address-map")
 
 //Function to search IP address
 const searchIpAddress = () => {
-    ipAddressValue = searchInput.value;
-    fetch(`https://geo.ipify.org/api/v1?apiKey=at_9AmVz8EqulLVCSQpGAhA9JFPvBfC1&ipAddress=${ipAddressValue}`)
+    ipAddressValue = searchInput.value; //ipAddressValue can be either ip address or domain or email address
+    fetch(`https://geo.ipify.org/api/v1?apiKey=at_9AmVz8EqulLVCSQpGAhA9JFPvBfC1&ipAddress=${ipAddressValue}&domain=${ipAddressValue}&email=${ipAddressValue}`)
     .then((res) => res.json())
     .then((data) => {
         console.log(data)
