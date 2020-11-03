@@ -180,4 +180,9 @@ body{
         flex-direction: column;
         top:20%
     }
+
+    .search-container input{
+        font-size: 16px;
+    }
+    
 }
