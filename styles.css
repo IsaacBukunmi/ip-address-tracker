@@ -11,7 +11,7 @@ body{
 
 .top-section{
     background-image: url(./images/pattern-bg.png);
-    height:42vh;
+    min-height:42vh;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
