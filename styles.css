@@ -6,7 +6,7 @@ body{
     padding:0;
     margin:0;
     font-family: var(--font-family-rubik);
-    
+    position: relative;
 }
 
 .top-section{
@@ -35,7 +35,7 @@ body{
 .search-container input{
     border:none;
     height:44px;
-    width:450px;
+    width:470px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     outline: transparent;
