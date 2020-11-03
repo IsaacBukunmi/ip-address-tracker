@@ -139,9 +139,13 @@ body{
 }
 
 @media(max-width:800px){
+    .top-section{
+        min-height:50vh;
+    }
+
     .address-details-section{
         flex-direction: column;
-        top:12%
+        top:20%
     }
 
     .address-details-section .address-item{
@@ -157,7 +161,7 @@ body{
     }
 
     .leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar {
-        margin-top:260px !important;
+        margin-top:280px !important;
     }
 
     .map-section .map-container{
@@ -174,6 +178,6 @@ body{
 
     .address-details-section{
         flex-direction: column;
-        top:17%
+        top:20%
     }
 }
